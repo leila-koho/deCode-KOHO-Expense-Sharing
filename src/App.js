@@ -50,9 +50,9 @@ function App() {
           <SingleExpensePage />
         </Route>
       </RouteSwitch>
-      <header className="App-header">
+      {/* <header className="App-header"> */}
       {/* the below code is just showcasing the componetns on the main page, we can remove this anytime */}
-        <Wrapper>
+        {/* <Wrapper>
           <Card /> 
 
           <TextField id="outlined-basic" label="Outlined" variant="outlined" />
@@ -70,8 +70,8 @@ function App() {
 
 
           <PlusMenu/> 
-      </Wrapper>
-      </header>
+      </Wrapper> */}
+      {/* </header> */}
     </Router>
   );
 }

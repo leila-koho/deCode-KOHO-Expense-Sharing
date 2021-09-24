@@ -1,6 +1,7 @@
 import React from 'react'
 import { PageLayout } from '../page-layout/PageLayout'
 import Card from '../components/Card'
+import PlusMenu from '../components/Menu'
 
 const ExpensesDashboard = () => {
     return(
@@ -8,7 +9,7 @@ const ExpensesDashboard = () => {
             <div
                 style={{
                     width: 'auto',
-                    height: '100%',
+                    height: 'auto',
                     display: "block",
                     marginLeft:"30px",
                     marginTop:"10px",
@@ -39,6 +40,10 @@ const ExpensesDashboard = () => {
                     />
 
             </div>
+            <div>
+                <PlusMenu/> 
+            </div>
+            
         </PageLayout>
     )
 }
