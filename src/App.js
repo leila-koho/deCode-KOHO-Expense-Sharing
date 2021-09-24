@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
@@ -6,6 +5,21 @@ import ExpensesDashboard from './Pages/ExpensesDashboard';
 import CreateExpensePage from './Pages/CreateExpensePage';
 import ExpenseBreakDownPage from './Pages/ExpenseBreakdownPage';
 import SingleExpensePage from './Pages/SingleExpensePage';
+import styled from 'styled-components';
+import WidthDrawSVG from './assets/logo-transparent.svg';
+import Button from './components/Button.js';
+
+const Wrapper = styled.div`
+  font-family: monospace;
+  color: blue;
+  margin: 2.5rem;
+`
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+`
 
 function App() {
   return (
@@ -30,6 +44,23 @@ function App() {
           <SingleExpensePage />
         </Route>
       </Switch>
+      <header className="App-header">
+        <Wrapper>
+          <Header>
+            <div>
+              <img
+              src={WidthDrawSVG}
+              alt=""
+            />
+            </div>
+            <div>FR</div>
+          </Header>
+
+          <Button style="primary" onClick={() => alert('primary button clicked')}/> 
+          <Button style="secondary" onClick={() => alert('secondary button clicked')}/> 
+          <Button style="disabled" /> 
+        </Wrapper>
+      </header>
     </Router>
   );
 }
