@@ -1,10 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
-import party from '../assets/party.png'
+import cash from '../assets/cash.png'
 
 const StyledCard = styled.button`
     margin: 1rem 0;
-    width: 35rem;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
@@ -18,12 +17,8 @@ const Flex = styled.div`
   color: #000000;
 `
 
-const Icon = styled.img`
-    width: 10rem
-`
-
 const Details = styled.div`
-    margin: 1rem
+    margin: 0 1rem
 `
 const Name = styled.div`
     font-family: "Basis Grotesque Pro", system-ui, sans-serif;
@@ -66,7 +61,7 @@ class Card extends React.Component {
         <StyledCard Style={this.props.style} onClick={this.props.onClick} >
             <Flex>
                 <div>
-                    <Icon src={party} alt="" />
+                    <img src={cash} alt="" />
                 </div>
                 <Details>
                     <Name>Aniversary</Name>
