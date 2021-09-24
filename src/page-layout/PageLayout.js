@@ -6,15 +6,23 @@ import WidthDrawSVG from '../assets/logo-transparent.svg';
 import translation from '../assets/translation.png'
 import Menu from '@mui/icons-material/Menu';
 
+const Dividor = styled.div`
+    margin-top: 30px;
+    border-top: 1px solid #c4c4c4;
+`
+
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
   color: #000000;
-  padding: 1rem;
+  padding: 20px;
+  padding-top: 30px;
+  alignItems: center;
+  justifyContent: center;
 `
-const  Dividor = styled.div`
-  widht: 1000000000000px;
-  border-top: 1px solid #c4c4c4
+
+const TranslationIcon = styled.img`
+  margin-right: 10px
 `
 
 export const PageLayout = ({
@@ -41,11 +49,12 @@ export const PageLayout = ({
                 />
             </div>
             <div>
-                <img src={translation} alt="" />
+                <TranslationIcon src={translation} alt="" />
                 <Menu style={{ color: "#000000" }} />
             </div>
         </Header>
-        <Dividor />
+
+        <Dividor style={{"marginTop": "0px"}} />
         <div className={css({ flex: 1, textAlign: "center" })}>
             <Typography 
             margin={`2rem 0 0 2rem`}
