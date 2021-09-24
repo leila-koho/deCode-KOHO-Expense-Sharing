@@ -32,7 +32,7 @@ const  Dividor = styled.div`
 `
 
 const TranslationIcon = styled.img`
-  width: 3rem;
+  padding-right: 0.5rem;
 `
 
 function App() {
