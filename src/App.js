@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-do
 import ExpensesDashboard from './Pages/ExpensesDashboard';
 import CreateExpensePage from './Pages/CreateExpensePage';
 import ExpenseBreakDownPage from './Pages/ExpenseBreakdownPage';
+import SingleExpensePage from './Pages/SingleExpensePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <NavLink to="/expense-dashboard">Expense Dashboard</NavLink> 
           | <NavLink to="create-expense">Create Expense</NavLink>
           | <NavLink to="expense-breakdown">Expense Breakdown</NavLink>
+          | <NavLink to="expense">Single Expense Page</NavLink>
         </Route>
         <Route path="/expense-dashboard">
           <ExpensesDashboard />
@@ -23,6 +25,9 @@ function App() {
         </Route>
         <Route path="/expense-breakdown">
           <ExpenseBreakDownPage />
+        </Route>
+        <Route path="/expense">
+          <SingleExpensePage />
         </Route>
       </Switch>
     </Router>
