@@ -8,5 +8,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./assets/fonts/basis-grotesque-regular-pro.woff) format('woff');
 }
 
