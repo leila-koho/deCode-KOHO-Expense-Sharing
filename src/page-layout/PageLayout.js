@@ -17,10 +17,6 @@ const  Dividor = styled.div`
   border-top: 1px solid #c4c4c4
 `
 
-const TranslationIcon = styled.img`
-  width: 3rem;
-`
-
 export const PageLayout = ({
   children,
   title,
@@ -44,7 +40,7 @@ export const PageLayout = ({
                 />
             </div>
             <div>
-                <TranslationIcon src={translation} alt="" />
+                <img src={translation} alt="" />
                 <Menu style={{ color: "#000000" }} />
             </div>
         </Header>
