@@ -58,7 +58,7 @@ function App() {
           <SingleExpensePage />
         </Route>
       </RouteSwitch>
-      <header className="App-header">
+      {/* <header className="App-header">
         <Wrapper>
           <Header>
             <div>
@@ -90,7 +90,7 @@ function App() {
           <Switch disabled defaultChecked />
           <Switch disabled />
       </Wrapper>
-      </header>
+      </header> */}
     </Router>
   );
 }

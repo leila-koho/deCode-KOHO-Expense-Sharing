@@ -24,6 +24,7 @@ const TranslationIcon = styled.img`
 export const PageLayout = ({
   children,
   title,
+  subtitle,
 }) => {
   const [css] = useStyletron();
 
@@ -34,6 +35,7 @@ export const PageLayout = ({
         flexDirection: "column",
         height: "100vh",
         width: "100vw",
+        margin: "5px",
       })}
     >
         <Header>
@@ -51,10 +53,16 @@ export const PageLayout = ({
         <Dividor />
         <div className={css({ flex: 1, textAlign: "center" })}>
             <Typography 
-            margin={`0px 0px 0px`}
-            variant="h3"
+            margin={`2rem 0 0 2rem`}
+            variant="h4"
             >
             {title || "No Title Provided"}
+            </Typography >
+            <Typography 
+              margin={`0 0 0 2rem`}
+              variant="subtitle1"
+              >
+              {subtitle || ""}
             </Typography >
         </div>
 
