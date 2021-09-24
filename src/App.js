@@ -6,34 +6,34 @@ import CreateExpensePage from './Pages/CreateExpensePage';
 import ExpenseBreakDownPage from './Pages/ExpenseBreakdownPage';
 import SingleExpensePage from './Pages/SingleExpensePage';
 import styled from 'styled-components';
-import WidthDrawSVG from './assets/logo-transparent.svg';
-import translation from './assets/translation.png'
-import Button from './components/Button.js';
-import Card from './components/Card.js';
-import Switch from '@mui/material/Switch';
-import TextField from '@mui/material/TextField';
-import Menu from '@mui/icons-material/Menu';
+// import WidthDrawSVG from './assets/logo-transparent.svg';
+// import translation from './assets/translation.png'
+// import Button from './components/Button.js';
+// import Card from './components/Card.js';
+// import Switch from '@mui/material/Switch';
+// import TextField from '@mui/material/TextField';
+// import Menu from '@mui/icons-material/Menu';
 
 const Wrapper = styled.div`
   font-family: monospace;
   color: blue;
-  margin: 2.5rem;
+  
 `
 
-const Header = styled.div`
-  display: flex;
-  margin-bottom: 2rem;
-  justify-content: space-between;
-  color: #000000;
-`
-const  Dividor = styled.div`
-  widht: 1000000000000px;
-  border-top: 1px solid #c4c4c4
-`
+// const Header = styled.div`
+//   display: flex;
+//   margin-bottom: 2rem;
+//   justify-content: space-between;
+//   color: #000000;
+// `
+// const  Dividor = styled.div`
+//   widht: 1000000000000px;
+//   border-top: 1px solid #c4c4c4
+// `
 
-const TranslationIcon = styled.img`
-  padding-right: 0.5rem;
-`
+// const TranslationIcon = styled.img`
+//   padding-right: 0.5rem;
+// `
 
 function App() {
   return (
@@ -60,7 +60,7 @@ function App() {
       </RouteSwitch>
       <header className="App-header">
         <Wrapper>
-          <Header>
+          {/* <Header>
             <div>
               <img
                 src={WidthDrawSVG}
@@ -88,7 +88,7 @@ function App() {
           <Switch defaultChecked />
           <Switch />
           <Switch disabled defaultChecked />
-          <Switch disabled />
+          <Switch disabled /> */}
       </Wrapper>
       </header>
     </Router>

@@ -40,7 +40,7 @@ class Button extends React.Component {
     return (
       <div>
         <StyledButton Style={this.props.style} onClick={this.props.onClick} >
-            {this.props.style} button
+            {this.props.text}
         </StyledButton>
       </div>
     );
