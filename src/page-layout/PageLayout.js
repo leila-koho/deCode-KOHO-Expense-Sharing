@@ -30,12 +30,7 @@ export const PageLayout = ({
         display: "flex",
         flexDirection: "column",
         height: "100vh",
-<<<<<<< HEAD
-        width: "100vw",
-        margin: "5px",
-=======
         width: "100vw"
->>>>>>> create-expense
       })}
     >
         <Header>

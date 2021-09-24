@@ -5,6 +5,7 @@ import Button from '../components/Button.js'
 import WidthDrawSVG from '../assets/logo-transparent.svg'
 import translation from '../assets/translation.png'
 import Menu from '@mui/icons-material/Menu'
+import Switch from '@mui/material/Switch';
 import { contacts } from '../data/contacts'
 import { groups } from '../data/groups'
 
@@ -102,15 +103,10 @@ const CreateExpensePage = () => {
         "flexDirection": "column",
         "justifyContent": "center"
     }
-    const toggleCircle = {
-        "height": "40px",
-        "width": "40px",
-        "backgroundColor": "#2D5BA8",
-        "borderRadius": "50%",
+    const toggleSwitch = {
         "display": "flex",
         "alignItems": "center",
         "justifyContent": "center",
-        "color": "white",
         "marginLeft": "auto"
     }
     
@@ -185,7 +181,9 @@ const CreateExpensePage = () => {
                         <div style={largeBodyStyle, {"fontWeight": "500"}}>One-Time</div>
                         <div style={smallBodyStyle}>This group is just for a single use. No transaction history.</div>
                     </div>
-                    <span style={toggleCircle}>T</span>
+                    <div style={toggleSwitch}>
+                        <Switch defaultChecked />
+                    </div>
                 </div>
 
                 <div style={toggleStyle}>
@@ -193,7 +191,9 @@ const CreateExpensePage = () => {
                         <div style={largeBodyStyle, {"fontWeight": "500"}}>Recurring</div>
                         <div style={smallBodyStyle}>This group is recurring. Transaction history is saved.</div>
                     </div>
-                    <span style={toggleCircle}>T</span>
+                    <div style={toggleSwitch}>
+                        <Switch />
+                    </div>
                 </div>
 
                 <Dividor />
